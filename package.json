@@ -1,0 +1,1 @@
+{"name":"pankaj-neetu-cinematic-invitation","private":true,"version":"1.0.0","type":"module","scripts":{"test":"node --test tests/*.test.js","check":"node --check app.js && node --check api/rsvp.js && node --check api/admin.js && node --check api/invite.js"},"engines":{"node":">=20"}}

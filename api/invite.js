@@ -1,0 +1,2 @@
+import {db,errorHandler,errorResponse} from '../lib/supabase.js';
+export default async function handler(req,res){res.setHeader('Cache-Control','no-store');if(req.method!=='GET')return errorResponse(res,405,'Method not allowed');const token=String(req.query.token||'');if(!/^[a-f0-9]{48,64}$/i.test(token))return errorResponse(res,400,'Invalid invitation link');try{const guests=await db('wedding_invitation_guests?invitation_token=eq.'+token+'&select=name,party_size&limit=1');return res.status(200).json({guest:guests?.[0]||null})}catch(error){return errorHandler(res,error)}}

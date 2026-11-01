@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#160b16" />
+  <meta name="description" content="श्री गणेशाय नमः। पंकज एवं नीतू के शुभ विवाह का स्नेहिल आमंत्रण, २–५ दिसंबर २०२६।" />
+  <meta property="og:title" content="शुभ विवाह • पंकज ♥ नीतू" />
+  <meta property="og:description" content="हमारे शुभ अवसर पर सपरिवार पधारकर आशीर्वाद दें। २–५ दिसंबर २०२६।" />
+  <meta property="og:type" content="website" />
+  <title>शुभ विवाह • पंकज एवं नीतू | Animated Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=Hind:wght@400;500;600;700&family=Yatra+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div id="noise" aria-hidden="true"></div>
+  <canvas id="atmosphere" aria-hidden="true"></canvas>
+  <div id="ambient-glow" aria-hidden="true"></div>
+  <div class="shell">
+    <header class="masthead">
+      <a class="seal" href="#ganesh" aria-label="Go to opening scene"><span>श्री</span><small>शुभ मंगल</small></a>
+      <span class="chapter-indicator"><span class="chapter-index" id="chapterIndex">01</span><span class="chapter-separator"></span><span id="chapterName">श्री गणेश वंदना</span></span>
+      <div class="header-actions"><button class="icon-button" id="soundBtn" aria-label="Enable sound" title="Music"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 9v7a3 3 0 1 1-2-2.83V5l11-2v11a3 3 0 1 1-2-2.83V7z"/></svg><span class="sound-slash" id="soundSlash"></span></button><button class="icon-button" id="shareBtn" aria-label="Share invitation" title="Share invitation"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V3m0 0L7 8m5-5 5 5M5 14v6h14v-6"/></svg></button></div>
+    </header>
+
+    <main id="film" aria-label="Animated wedding invitation">
+      <div class="film-grain" aria-hidden="true"></div>
+      <div class="frame-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="scene scene-ganesh is-active" data-scene="ganesh" data-duration="12500" aria-hidden="false">
+        <div class="temple-orb"></div>
+        <div class="door door-left"><div class="door-pattern"></div><span class="door-knob"></span></div>
+        <div class="door door-right"><div class="door-pattern"></div><span class="door-knob"></span></div>
+        <div class="arch" aria-hidden="true"><div class="arch-top"></div><div class="arch-left"></div><div class="arch-right"></div></div>
+        <div class="scene-content ganesh-content">
+          <p class="eyebrow reveal delay-1">॥ श्री गणेशाय नमः ॥</p>
+          <svg class="ganesh-art reveal delay-2" viewBox="0 0 360 355" role="img" aria-label="Artistic golden Shri Ganesh illustration">
+            <defs><linearGradient id="ganeshGold" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#fff1b2"/><stop offset=".52" stop-color="#bf8140"/><stop offset="1" stop-color="#f1d28b"/></linearGradient><filter id="goldGlow"><feGaussianBlur stdDeviation="1.8" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+            <g fill="none" stroke="url(#ganeshGold)" stroke-linecap="round" stroke-linejoin="round" filter="url(#goldGlow)" class="ganesh-strokes">
+              <path stroke-width="5" d="M132 78Q178 20 227 78M135 70Q178 51 224 70M154 50L180 19l26 31M167 35h26"/>
+              <path stroke-width="7" d="M120 116Q80 75 53 112Q32 153 99 178M238 116Q279 74 307 115Q330 158 261 181"/>
+              <path stroke-width="6" d="M111 130Q106 205 155 221M249 131Q260 206 207 222"/>
+              <path stroke-width="8" d="M153 128Q180 113 207 128M152 148Q177 155 207 148"/>
+              <path stroke-width="7" d="M181 155Q175 200 198 237Q219 278 187 294Q164 302 158 274"/>
+              <path stroke-width="4" d="M131 190Q145 196 156 190M206 191Q220 198 232 190"/>
+              <path stroke-width="5" d="M112 206Q67 226 92 263Q116 281 143 258M243 208Q288 229 269 266Q245 281 217 258"/>
+              <path stroke-width="5" d="M142 253Q181 231 217 253M119 284Q173 268 237 285M142 312Q178 325 219 312"/>
+              <circle cx="180" cy="109" r="6" fill="#f5cd78" stroke="none"/>
+            </g>
+            <g class="ganesh-sparkles" fill="#ffe5a1"><circle cx="41" cy="60" r="2.1"/><circle cx="303" cy="73" r="2.6"/><circle cx="43" cy="242" r="2.5"/><circle cx="317" cy="243" r="1.6"/><circle cx="180" cy="345" r="2"/></g>
+          </svg>
+          <p class="sanskrit-verse reveal delay-3">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</p>
+          <div class="divider-ornament reveal delay-4"><span></span>✦<span></span></div>
+          <p class="ritual-caption reveal delay-4">एक मंगलमय आरंभ की ओर…</p>
+        </div>
+        <div class="diya diya-left"><span class="flame"></span><span class="bowl"></span></div><div class="diya diya-right"><span class="flame"></span><span class="bowl"></span></div>
+      </div>
+
+      <div class="scene scene-couple" data-scene="couple" data-duration="14000" aria-hidden="true">
+        <div class="radial-flower"></div><div class="couple-halo"></div>
+        <div class="scene-content couple-content">
+          <p class="eyebrow reveal delay-1">सपरिवार स्नेहिल आमंत्रण</p>
+          <p class="royal-motto reveal delay-2">Two souls. One beautiful journey.</p>
+          <div class="name-lockup reveal delay-2"><span class="name">पंकज</span><span class="ampersand">&</span><span class="name">नीतू</span></div>
+          <p class="royal-english reveal delay-3">PANKAJ <span>✦</span> NEETU</p>
+          <div class="divider-ornament reveal delay-3"><span></span>❈<span></span></div>
+          <p class="blessing reveal delay-4">ईश्वर की कृपा एवं बड़ों के आशीर्वाद से<br>हमारे शुभ विवाह में आपका हार्दिक स्वागत है।</p>
+          <p class="date-lockup reveal delay-4">०५ <span>•</span> दिसंबर <span>•</span> २०२६</p>
+          <p class="subtle-label reveal delay-4">शुभ समयानुसार · सोमवर्षा, गोपालगंज</p>
+        </div>
+      </div>
+
+      <div class="scene scene-tilak ceremony-scene" data-scene="tilak" data-duration="11500" aria-hidden="true">
+        <div class="ceremony-art" aria-hidden="true"><div class="rangoli rangoli-tilak"></div><div class="ceremony-illustration thali-illustration"><span class="thali-center"></span><span class="thali-halo"></span><span class="kumkum"></span><span class="rice"></span></div></div>
+        <div class="scene-content ceremony-content"><p class="eyebrow reveal delay-1">शुभारंभ · २ दिसंबर २०२६</p><p class="ceremony-overline reveal delay-2">मंगल तिलक</p><h1 class="ceremony-title reveal delay-2">तिलक <em>उत्सव</em></h1><div class="divider-ornament reveal delay-3"><span></span>✦<span></span></div><p class="ceremony-quote reveal delay-3">परंपराओं का मंगल आरंभ,<br>रिश्तों की एक नई मिठास।</p><p class="ceremony-location reveal delay-4">बगौछा, महाराजगंज, सिवान, बिहार</p><span class="event-chip reveal delay-4">बुधवार · शुभ समयानुसार</span></div>
+      </div>
+
+      <div class="scene scene-haldi ceremony-scene" data-scene="haldi" data-duration="11500" aria-hidden="true">
+        <div class="ceremony-art" aria-hidden="true"><div class="rangoli rangoli-haldi"></div><div class="ceremony-illustration haldi-illustration"><div class="haldi-bowl"><span></span></div><i class="turmeric-dust dust-a"></i><i class="turmeric-dust dust-b"></i><i class="turmeric-dust dust-c"></i></div></div>
+        <div class="scene-content ceremony-content"><p class="eyebrow reveal delay-1">३ दिसंबर २०२६ · वर पक्ष</p><p class="ceremony-overline reveal delay-2">A golden beginning</p><h1 class="ceremony-title reveal delay-2">हल्दी <em>रस्म</em></h1><div class="divider-ornament reveal delay-3"><span></span>✦<span></span></div><p class="ceremony-quote reveal delay-3">हल्दी की सुनहरी चमक,<br>अपनों के प्यार की महक।</p><p class="ceremony-location reveal delay-4">वर निवास · बगौछा, महाराजगंज, सिवान</p><span class="event-chip reveal delay-4">गुरुवार · शुभ समयानुसार</span></div>
+      </div>
+
+      <div class="scene scene-mehndi ceremony-scene" data-scene="mehndi" data-duration="11500" aria-hidden="true">
+        <div class="ceremony-art" aria-hidden="true"><svg class="mehndi-vine" viewBox="0 0 400 400"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M-4 390 C90 335 115 245 198 198 S280 92 405-7"/><path d="M78 350 C65 292 105 286 120 322 C112 346 92 352 78 350ZM130 288 C129 225 178 230 177 270 C170 290 149 295 130 288ZM212 192 C183 139 231 122 251 156 C256 176 234 194 212 192ZM275 118 C260 61 312 50 325 85 C324 105 301 119 275 118Z"/><path d="M99 312 Q149 310 157 344 Q111 366 99 312ZM186 225 Q222 230 227 259 Q185 272 186 225ZM245 161 Q288 156 297 187 Q251 195 245 161Z"/></g></svg><div class="mehndi-center">❁</div></div>
+        <div class="scene-content ceremony-content"><p class="eyebrow reveal delay-1">३ दिसंबर २०२६ · वर पक्ष</p><p class="ceremony-overline reveal delay-2">A celebration of love</p><h1 class="ceremony-title reveal delay-2">मेहंदी <em>उत्सव</em></h1><div class="divider-ornament reveal delay-3"><span></span>✦<span></span></div><p class="ceremony-quote reveal delay-3">मेहंदी के रंगों में सजा,<br>अपनों के संग उत्सव का आनंद।</p><p class="ceremony-location reveal delay-4">वर निवास · बगौछा, महाराजगंज, सिवान</p><span class="event-chip reveal delay-4">गुरुवार · शुभ समयानुसार</span></div>
+      </div>
+
+      <div class="scene scene-matkor ceremony-scene" data-scene="matkor" data-duration="11500" aria-hidden="true">
+        <div class="ceremony-art" aria-hidden="true"><div class="earth-disc"></div><div class="kalash"><div class="kalash-leaf leaf-one"></div><div class="kalash-leaf leaf-two"></div><div class="kalash-leaf leaf-three"></div><div class="kalash-neck"></div><div class="kalash-body"></div><div class="kalash-base"></div></div></div>
+        <div class="scene-content ceremony-content"><p class="eyebrow reveal delay-1">४ दिसंबर २०२६</p><p class="ceremony-overline reveal delay-2">माटी का आशीर्वाद</p><h1 class="ceremony-title reveal delay-2">मटकोर <em>विधि</em></h1><div class="divider-ornament reveal delay-3"><span></span>✦<span></span></div><p class="ceremony-quote reveal delay-3">माटी की सौंधी सुगंध,<br>अपनी संस्कृति और परंपरा के संग।</p><p class="ceremony-location reveal delay-4">बगौछा, महाराजगंज, सिवान, बिहार</p><span class="event-chip reveal delay-4">शुक्रवार · शुभ समयानुसार</span></div>
+      </div>
+
+      <div class="scene scene-vivah ceremony-scene" data-scene="vivah" data-duration="15000" aria-hidden="true">
+        <div class="mandap" aria-hidden="true"><span class="mandap-roof"></span><span class="mandap-column left"></span><span class="mandap-column right"></span><span class="mandap-garland"></span><span class="mandap-fire">✦</span></div>
+        <div class="scene-content ceremony-content"><p class="eyebrow reveal delay-1">शुभ विवाह · ५ दिसंबर २०२६</p><p class="ceremony-overline reveal delay-2">मांगलिक मिलन</p><h1 class="ceremony-title reveal delay-2">शुभ <em>विवाह</em></h1><div class="divider-ornament reveal delay-3"><span></span>✦<span></span></div><p class="ceremony-quote reveal delay-3">सात फेरे, सात वचन,<br>जन्म-जन्मांतर का पावन बंधन।</p><p class="ceremony-location reveal delay-4">सोमवर्षा, गोपालगंज, बिहार · वधू पक्ष</p><span class="event-chip reveal delay-4">शनिवार · शुभ समयानुसार</span><a class="venue-button reveal delay-4" href="https://www.google.com/maps/search/?api=1&query=Somvarsha%20Gopalganj%20Bihar" target="_blank" rel="noopener noreferrer">दिशा देखें ↗</a></div>
+      </div>
+
+      <div class="scene scene-rsvp" data-scene="rsvp" data-duration="18000" aria-hidden="true">
+        <div class="rsvp-halo"></div>
+        <div class="scene-content rsvp-content"><p class="eyebrow reveal delay-1">आपकी उपस्थिति हमारे लिए अनमोल है</p><h1 class="rsvp-title reveal delay-2">सपरिवार <em>पधारें</em></h1><p class="rsvp-subtitle reveal delay-3">Join us in celebrating the beginning of forever.</p><button class="primary-cta reveal delay-3" id="openRsvp">Confirm Your Presence <span>↗</span></button><p class="rsvp-quote reveal delay-4">आपका आशीर्वाद ही हमारा सबसे सुंदर उपहार है।</p><p class="rsvp-signature reveal delay-4">सप्रेम · समस्त परिवार</p></div>
+      </div>
+    </main>
+
+    <footer class="player">
+      <div class="progress-track" id="progressTrack" role="slider" tabindex="0" aria-label="Invitation film progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="progress-fill" id="progressFill"></span></div>
+      <div class="player-bottom"><span class="film-time" id="filmTime">00:00 <span>/</span> 01:46</span><div class="player-buttons"><button id="prevBtn" aria-label="Previous scene" title="Previous scene">‹</button><button id="playBtn" aria-label="Pause playback" title="Pause playback">Ⅱ</button><button id="nextBtn" aria-label="Next scene" title="Next scene">›</button></div><button class="scene-list-toggle" id="listBtn">EXPLORE EVENTS <span>⌄</span></button></div>
+    </footer>
+    <nav class="scene-navigator" id="sceneNav" aria-label="Wedding scenes" hidden></nav>
+  </div>
+
+  <dialog class="rsvp-dialog" id="rsvpDialog" aria-labelledby="rsvpHeading"><form method="dialog" class="dialog-close-row"><button class="close-dialog" value="cancel" aria-label="Close RSVP">×</button></form><div class="dialog-body"><p class="eyebrow">WITH LOVE · PANKAJ & NEETU</p><h2 id="rsvpHeading">अपनी उपस्थिति बताएँ</h2><p class="dialog-lede" id="inviteGreeting">We would be delighted to celebrate with you.</p><form id="rsvpForm" novalidate><label>Your name <input id="guestName" name="name" autocomplete="name" maxlength="90" required placeholder="Enter your name"></label><label>Mobile number <span class="optional" id="phoneOptional">(for an unpersonalized invitation)</span><input id="guestPhone" name="phone" autocomplete="tel" inputmode="tel" maxlength="16" placeholder="10-digit mobile number"></label><div class="form-row"><label>Will you attend?<select id="attendance" name="response"><option value="yes">Yes, with pleasure</option><option value="maybe">Not sure yet</option><option value="no">Unable to attend</option></select></label><label>Number of guests<input id="attendeeCount" name="attendees" type="number" min="0" max="30" value="1" required></label></div><fieldset><legend>Which functions will you join?</legend><label class="check"><input type="checkbox" value="tilak" checked>Tilak · Dec 2</label><label class="check"><input type="checkbox" value="haldi" checked>Haldi · Dec 3</label><label class="check"><input type="checkbox" value="mehndi" checked>Mehndi · Dec 3</label><label class="check"><input type="checkbox" value="matkor" checked>Matkor · Dec 4</label><label class="check"><input type="checkbox" value="vivah" checked>Wedding · Dec 5</label></fieldset><div class="trap" aria-hidden="true"><label>Website<input name="website" id="website" tabindex="-1" autocomplete="off"></label></div><button class="submit-rsvp" type="submit" id="submitRsvp">Send RSVP <span>↗</span></button><p class="form-message" id="formMessage" role="status" aria-live="polite"></p></form><p class="privacy-note">Your response is shared only with the wedding organizers.</p></div></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
