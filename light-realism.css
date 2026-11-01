@@ -1,0 +1,195 @@
+/* Daylight ceremony film · realistic-illustration treatment v3 */
+:root { --ink:#352521;--wine:#783f4b;--ruby:#9e5260;--gold:#a87540;--bright:#a5703e;--cream:#fff8ed;--muted:#7f685f;--border:rgba(152,103,61,.25);font-synthesis:none;color-scheme:light; }
+html { background:#f9f1e7; }
+body { color:#493330;background:radial-gradient(ellipse 83% 68% at 50% 24%,#fffdfa 0,#f9ede1 72%,#f1dfd2 100%); }
+#noise { opacity:.10;mix-blend-mode:multiply; }
+#ambient-glow { background:radial-gradient(ellipse at 48% 15%,#ffe3b388,transparent 48%);opacity:.44; }
+#atmosphere { opacity:.75; }
+.shell { max-width:1480px; }
+.masthead { color:#593b39; }
+.seal { width:auto; }
+.seal span { background:#fffaf3;color:#885444;box-shadow:0 3px 12px #a578591a;border-color:#b8916b68; }
+.seal small { color:#8f6353; }
+.chapter-indicator { color:#74594d; }
+.chapter-index { color:#a87540; }
+.chapter-separator { background:#b68e7140; }
+.icon-button { background:#fffcf9c9;color:#85534b;border-color:#aa7b644e;box-shadow:0 4px 14px #9d7f5824; }
+.icon-button:hover { background:#fff0d7;border-color:#b98b56; }
+#film { background:#fcf4e9;border:1px solid #d2b89c9c;border-radius:20px;box-shadow:0 22px 65px #9f6d4a2e,inset 0 0 0 4px #fffaf580; }
+#film:before { background:radial-gradient(ellipse at 50% 52%,transparent 44%,rgba(161,107,68,.12) 100%); }
+#film:after { border:7px solid #fffaf454;box-shadow:inset 0 0 0 1px #fff7e55a; }
+.film-grain { opacity:.23;mix-blend-mode:multiply;background:repeating-linear-gradient(180deg,transparent 0 4px,#a87d5f10 5px 6px); }
+.frame-corners i { border-color:#a7774b99; }
+.scene { transform:translateY(2.4%) scale(1.028);transition:opacity 1.25s cubic-bezier(.22,.67,.15,1),transform 2.4s cubic-bezier(.22,.67,.15,1),visibility 1.3s; background:radial-gradient(ellipse at 50% 30%,#fff8e9,#f7e0ca 75%,#e9cfbd); }
+.scene.is-active{transform:translateY(0) scale(1)}
+.scene.is-exiting{transform:translateY(-1.3%) scale(.985)}
+.scene:after { background:linear-gradient(90deg,#c9a07514,transparent 16% 84%,#c9a07514); }
+.scene-ganesh { background:radial-gradient(ellipse 66% 76% at 51% 33%,#fffef5 0,#fff1d9 48%,#e7c8b4 100%); }
+.scene-couple { background:radial-gradient(ellipse 76% 70% at 51% 31%,#fff6e9 0,#f6ddd4 57%,#ddb4a8 100%); }
+.scene-tilak { background:radial-gradient(ellipse 66% 75% at 50% 32%,#fff7e8 0,#f4dcc0 63%,#e6bc99 100%); }
+.scene-haldi { background:radial-gradient(ellipse 77% 73% at 50% 28%,#fffefa 0,#fff1c2 54%,#eed09a 100%); }
+.scene-mehndi { background:radial-gradient(ellipse 72% 72% at 50% 30%,#fffefa 0,#e7efdc 57%,#bfd4b9 100%); }
+.scene-matkor { background:radial-gradient(ellipse 73% 69% at 50% 33%,#fff9ef 0,#f2dcc3 55%,#dab49a 100%); }
+.scene-vivah { background:radial-gradient(ellipse 73% 72% at 50% 30%,#fff8ec 0,#f4ddd2 55%,#e6b5ae 100%); }
+.scene-rsvp { background:radial-gradient(ellipse 70% 67% at 50% 42%,#fffefa 0,#f8e5d8 68%,#e9c8b7 100%); }
+.cartoon-stage { filter:blur(6px);transition:opacity 1.1s ease, transform 2.9s cubic-bezier(.18,.76,.15,1),filter 1.4s ease; }
+.scene.is-active .cartoon-stage { filter:none; }
+.cartoon-svg { filter:drop-shadow(0 13px 13px #946f5340) saturate(.89); }
+.cartoon-lens { background:radial-gradient(ellipse 56% 48% at 50% 43%,transparent 28%,#f0d5b021 80%,#f1dabc45 100%); }
+.scene:has(.cartoon-stage) .ceremony-content,
+.scene:has(.cartoon-stage) .couple-content,
+.scene:has(.cartoon-stage) .ganesh-content {background:linear-gradient(to top,#fff8eef9 0%,#fff6e9ed 22%,#fffae8b8 35%,#fffef500 61%); }
+.scene:has(.cartoon-stage) .ceremony-content {padding-bottom:clamp(29px,4.8vh,51px);}
+.scene:has(.cartoon-stage) .ganesh-content {padding-bottom:clamp(49px,7.8vh,86px);}
+.scene:has(.cartoon-stage) .couple-content {padding-bottom:clamp(48px,6.8vh,93px);}
+.scene:has(.cartoon-stage) .ceremony-title { color:#754452;text-shadow:0 2px 7px #fff9f6c7; }
+.scene:has(.cartoon-stage) .couple-content .name-lockup {color:#824958;text-shadow:0 3px 15px #fffcf7dd;}
+.scene:has(.cartoon-stage) .ganesh-content .sanskrit-verse {color:#754c43;text-shadow:0 1px 8px #fffcf6;font-weight:500;}
+.eyebrow,.scene:has(.cartoon-stage) .eyebrow {color:#9a653e;text-shadow:none;}
+.royal-motto,.ceremony-subtitle,.rsvp-subtitle {color:#96624e;}
+.royal-english,.date-lockup,.subtle-label {color:#8b5d47;}
+.blessing,.ceremony-quote,.rsvp-quote {color:#73564c;text-shadow:0 1px 3px #fff9f3;}
+.ceremony-location {color:#825c4b;}
+.ceremony-overline {color:#9b6a4a;}
+.divider-ornament {color:#ac7b45;}
+.divider-ornament span {background:linear-gradient(90deg,transparent,#b18855);}
+.event-chip {color:#80513f;background:#fff9efdf;border-color:#b78f656f;box-shadow:0 2px 9px #ac825b24;}
+.venue-button {color:#875440;border-color:#ae8259;}
+.rsvp-halo {opacity:.27;filter:sepia(1) hue-rotate(330deg);}
+.rsvp-title {color:#7d4651;}
+.rsvp-title em {color:#bd8c58;}
+.primary-cta,.submit-rsvp {color:#fffdf9;background:linear-gradient(117deg,#8a4f52,#ab666b 46%,#9f525a);border-radius:999px;box-shadow:0 8px 24px #9d66624a;}
+.primary-cta:hover,.submit-rsvp:hover {box-shadow:0 11px 35px #b9857971;}
+.player{color:#634b44;}
+.film-time {color:#846b62;}
+.player-buttons button {color:#84564c;background:#fffaf6;border-color:#b8916a91;box-shadow:0 3px 8px #b58b6120;}
+.player-buttons button:hover {background:#fff0df;}
+.player-buttons button:nth-child(2) {border-color:#aa725b;}
+.scene-list-toggle {color:#89634f;}
+.scene-navigator {background:#fff9f4f5;color:#593f38;border-color:#d9b89a;box-shadow:0 18px 44px #8e67504a;}
+.scene-navigator button{color:#5e443d;}
+.scene-navigator button:hover,.scene-navigator button.active {background:#f7e3d2;}
+.scene-navigator button span{color:#9a7561;}
+.rsvp-dialog{background:linear-gradient(145deg,#fffdf9,#f9ede1);color:#503c36;border-color:#d0ae8c;box-shadow:0 30px 100px #6b403e5c;}
+.rsvp-dialog::backdrop {background:#35221b80;}
+.rsvp-dialog label {color:#694e48;}
+.rsvp-dialog input:not([type=checkbox]),.rsvp-dialog select {background:#fffefa;border-color:#d0ab8c;color:#4b3834;}
+.rsvp-dialog input::placeholder {color:#a69185;}
+.rsvp-dialog fieldset {border-color:#d7bba3;}
+.rsvp-dialog legend {color:#81554b;}
+.rsvp-dialog .optional {color:#94776c;}
+.form-message{color:#845647;}
+.form-message.error{color:#9a2632;}
+.form-message.success{color:#27754b;}
+.privacy-note{color:#8f7469;}
+.toast{background:#fffaf5;color:#784e42;border-color:#cfaa88;box-shadow:0 14px 30px #9b72613a;}
+.door{background:linear-gradient(96deg,#a16e50,#d5a879 35%,#bd865c 67%,#a06f53);border-color:#f5d8a1;box-shadow:inset 0 0 30px #70412858,4px 0 21px #734c343c;}
+.door-pattern{border-color:#fff1cd9a;box-shadow:inset 0 0 0 8px #aa785877,inset 0 0 0 10px #f9dcb99d;}
+.arch-left,.arch-right {background:repeating-linear-gradient(180deg,#c69c6b,#f2d9a7 22px,#b88c64 29px,#e5bb89 52px);box-shadow:0 0 12px #ba916c3b;}
+.arch-top{border-color:#cda67994;box-shadow:0 0 30px #fff2dd87;}
+.daylight-shimmer{pointer-events:none;position:absolute;inset:-30%;z-index:5;mix-blend-mode:screen;opacity:.22;transform:translateX(-50%) rotate(-18deg);background:linear-gradient(90deg,transparent 43%,#fff9e4aa 50%,transparent 58%);animation:daylight-ray 19s ease-in-out infinite alternate;}
+@keyframes daylight-ray {0%{transform:translateX(-43%) rotate(-17deg)}100%{transform:translateX(43%) rotate(-17deg)}}
+/* Subtle skin, garment, and fabric motion: slower overlapping gestures with deliberate holds. */
+.cartoon-svg .character-body {animation:human-breath 5.6s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 78%;}
+.cartoon-svg .character-head{animation:human-look 7.7s ease-in-out infinite;transform-origin:50% 88%;transform-box:fill-box;}
+.cartoon-svg .cartoon-arm{animation:resting-hand 6.8s ease-in-out infinite;transform-box:fill-box;transform-origin:50% 9%;}
+.cartoon-svg .arm-left {animation-delay:-2.4s;}
+.cartoon-svg .portrait-blink {opacity:0;animation:human-blink 6.5s steps(1) infinite;}
+.cartoon-svg .stage-depth {animation:camera-breath 21s cubic-bezier(.37,0,.63,1) infinite alternate;transform-origin:450px 310px;}
+.cartoon-svg .stage-garlands {animation:fabric-wind 7.2s ease-in-out infinite alternate;transform-origin:50% 0%;}
+.cartoon-svg .cartoon-spark {animation:soft-sun-dust 5.7s ease-in-out infinite;}
+.cartoon-svg .cartoon-petal {animation:petal-fall 11s linear infinite;}
+.cartoon-svg .dance-bride .character-body {animation:couple-pose-bride 9s ease-in-out infinite;}
+.cartoon-svg .dance-groom .character-body {animation:couple-pose-groom 9s ease-in-out infinite;}
+.cartoon-svg .dance-bride .arm-right,.cartoon-svg .dance-groom .arm-left {animation:couple-hand-reach 9s ease-in-out infinite;}
+.cartoon-svg .groom-bow .character-head {animation:ritual-bow 6.8s ease-in-out infinite;}
+.cartoon-svg .elder-bless .arm-right {animation:ritual-tilak-hand 6.8s ease-in-out infinite;}
+.cartoon-svg .tilak-tika{animation:ritual-tika 6.8s ease-in-out infinite;}
+.cartoon-svg .haldi-groom .character-body{animation:haldi-gentle-react 7.2s ease-in-out infinite;}
+.cartoon-svg .apply-haldi .arm-right {animation:haldi-gentle-apply 7.2s ease-in-out infinite;}
+.cartoon-svg .haldi-splash {animation:haldi-real-powder 7.2s ease-in-out infinite;}
+.cartoon-svg .mehndi-draw {stroke-dasharray:260;stroke-dashoffset:260;animation:henna-ink 8.5s cubic-bezier(.3,0,.6,1) infinite;}
+.cartoon-svg .mehndi-artist .arm-right {animation:henna-hand 8.5s ease-in-out infinite;}
+.cartoon-svg .mehndi-client .arm-right {animation:henna-client 8.5s ease-in-out infinite;}
+.cartoon-svg .mehndi-flower-dance {animation:slow-floral 24s linear infinite;}
+.cartoon-svg .matkor-dancer .character-body,.cartoon-svg .matkor-puja .character-body{animation:earth-ritual-body 8.2s ease-in-out infinite;}
+.cartoon-svg .matkor-pot{animation:earth-ritual-pot 8.2s ease-in-out infinite;}
+.cartoon-svg .matkor-water{animation:earth-ritual-water 8.2s ease-in-out infinite;}
+.cartoon-svg .wedding-phere{animation:sacred-circuit 18s ease-in-out infinite;transform-origin:450px 300px;}
+.cartoon-svg .phere-bride .character-body,.cartoon-svg .phere-groom .character-body{animation:prayer-step 1.85s ease-in-out infinite;}
+.cartoon-svg .havan-flame{animation:real-flame 1.65s ease-in-out infinite;}
+.cartoon-svg .ganesh-cartoon{animation:deity-quiet 9s ease-in-out infinite;transform-origin:50% 50%;}
+.cartoon-svg .ganesh-blessing{animation:ganesh-gentle 7.8s ease-in-out infinite;}
+.cartoon-svg .ganesh-trunk,.cartoon-svg .ganesh-trunk-detail{animation:trunk-gentle 7.8s ease-in-out infinite;}
+.cartoon-svg .ganesh-back-halo {animation:halo-turn 46s linear infinite;transform-origin:445px 213px;}
+.cartoon-svg .ganesh-modak{animation:modak-gentle 7.8s ease-in-out infinite;}
+@keyframes human-breath{0%,100%{transform:translateY(0) scale(1)}45%,55%{transform:translateY(-3px) scale(1.008)}}
+@keyframes human-look{0%,25%,100%{transform:rotate(-1deg)}48%,62%{transform:rotate(2deg)}78%{transform:rotate(0)}}
+@keyframes resting-hand{0%,32%,100%{transform:rotate(0)}50%,67%{transform:rotate(-4deg)}}
+@keyframes human-blink{0%,21%,23%,66%,68%,100%{opacity:0}22%,67%{opacity:1}}
+@keyframes camera-breath{0%{transform:translateY(4px) scale(.985)}100%{transform:translateY(-11px) scale(1.045)}}
+@keyframes fabric-wind{0%{transform:rotate(-.5deg)}100%{transform:rotate(.7deg)}}
+@keyframes soft-sun-dust{0%,100%{opacity:.10;transform:translateY(5px)}50%{opacity:.66;transform:translateY(-13px)}}
+@keyframes petal-fall{0%{opacity:0;transform:translate(-12px,-130px) rotate(-22deg)}12%{opacity:.85}82%{opacity:.72}100%{opacity:0;transform:translate(56px,245px) rotate(198deg)}}
+@keyframes couple-pose-bride{0%,13%,100%{transform:translateY(0) rotate(-.9deg)}34%,51%{transform:translateY(-4px) rotate(-2.5deg)}72%{transform:translateY(1px) rotate(1deg)}}
+@keyframes couple-pose-groom{0%,13%,100%{transform:translateY(0) rotate(.8deg)}34%,51%{transform:translateY(-3px) rotate(1.6deg)}72%{transform:translateY(1px) rotate(-1deg)}}
+@keyframes couple-hand-reach{0%,19%,100%{transform:rotate(0deg)}36%,57%{transform:rotate(-20deg)}70%{transform:rotate(-10deg)}}
+@keyframes ritual-bow{0%,30%,100%{transform:rotate(0)}46%,68%{transform:rotate(9deg) translateY(2px)}}
+@keyframes ritual-tilak-hand{0%,20%,100%{transform:rotate(0deg)}43%,61%{transform:rotate(27deg) translate(21px,-16px)}80%{transform:rotate(5deg)}}
+@keyframes ritual-tika{0%,34%{opacity:0;transform:scale(.6)}45%,100%{opacity:1;transform:scale(1)}}
+@keyframes haldi-gentle-react{0%,27%,100%{transform:rotate(0) translateY(0)}44%,68%{transform:rotate(-3deg) translateY(-5px)}81%{transform:rotate(1deg)}}
+@keyframes haldi-gentle-apply{0%,17%,100%{transform:rotate(0)}42%,64%{transform:rotate(29deg) translate(19px,-17px)}83%{transform:rotate(6deg)}}
+@keyframes haldi-real-powder{0%,40%,100%{opacity:0;transform:translateY(5px) scale(.5)}49%,57%{opacity:.7;transform:translateY(-4px) scale(1)}73%{opacity:0;transform:translate(6px,13px) scale(1.2)}}
+@keyframes henna-ink{0%,15%{stroke-dashoffset:260;opacity:.7}65%,88%{stroke-dashoffset:0;opacity:1}100%{stroke-dashoffset:0;opacity:1}}
+@keyframes henna-hand{0%,15%,100%{transform:rotate(-1deg)}28%{transform:rotate(8deg) translate(5px,-4px)}42%{transform:rotate(12deg) translate(10px,-7px)}60%{transform:rotate(9deg) translate(7px,-10px)}78%{transform:rotate(3deg)}}
+@keyframes henna-client{0%,18%,100%{transform:rotate(0)}42%,69%{transform:rotate(-5deg)}}
+@keyframes slow-floral{100%{transform:rotate(360deg)}}
+@keyframes earth-ritual-body{0%,25%,100%{transform:translateY(0)}45%,69%{transform:translateY(-5px) rotate(1deg)}}
+@keyframes earth-ritual-pot{0%,25%,100%{transform:translateY(0) rotate(0)}45%,68%{transform:translateY(-8px) rotate(-3deg)}83%{transform:translateY(0)}}
+@keyframes earth-ritual-water{0%,35%{opacity:0;transform:translateY(-8px)}53%,72%{opacity:.72;transform:translateY(5px)}88%,100%{opacity:0;transform:translateY(14px)}}
+@keyframes sacred-circuit{0%,100%{transform:translateX(-17px) scale(.96)}22%{transform:translateX(-4px) scale(.99)}46%{transform:translateX(19px) scale(1.025)}72%{transform:translateX(4px) scale(1)}}
+@keyframes prayer-step{0%,100%{transform:translateY(0) rotate(0)}40%{transform:translateY(-3px) rotate(.6deg)}}
+@keyframes real-flame{0%,100%{transform:scaleX(.92) scaleY(1)}45%{transform:scaleX(1.08) scaleY(1.13) skewX(-3deg)}75%{transform:scaleX(.87) scaleY(.93) skewX(3deg)}}
+@keyframes deity-quiet{0%,100%{transform:translate(445px,265px)}50%{transform:translate(445px,261px)}}
+@keyframes ganesh-gentle{0%,27%,100%{transform:rotate(0)}49%,69%{transform:rotate(5deg)}}
+@keyframes trunk-gentle{0%,28%,100%{transform:rotate(0)}52%,68%{transform:rotate(2.3deg)}}
+@keyframes modak-gentle{0%,32%,100%{transform:translateY(0)}55%,72%{transform:translateY(-4px)}}
+/* Focus, not constant movement. Respect motion settings and pause for all scenes. */
+.scene:not(.is-active) .cartoon-svg *, .film-paused .cartoon-svg *,
+.film-paused .daylight-shimmer {animation-play-state:paused!important;}
+@media(max-width:650px){
+  .shell{padding:0 10px;}
+  #film{border-radius:14px;}
+  .masthead{height:64px;flex-basis:64px;}
+  .cartoon-svg{top:6%;height:69%;width:164vw;}
+  .scene:has(.cartoon-stage) .ceremony-content{padding-bottom:clamp(24px,4vh,43px);background:linear-gradient(to top,#fff8eefb 0%,#fff7ecf5 22%,#fffae9d4 37%,transparent 69%);}
+  .scene:has(.cartoon-stage) .couple-content{padding-bottom:clamp(49px,7vh,79px);}
+  .scene:has(.cartoon-stage) .ganesh-content{padding-bottom:clamp(47px,7vh,77px);}
+  .scene:has(.cartoon-stage) .ceremony-title{font-size:clamp(46px,11vw,61px);}
+  .scene:has(.cartoon-stage) .ceremony-quote{color:#70534b;}
+  .scene:has(.cartoon-stage) .couple-content .name-lockup{font-size:clamp(48px,12vw,61px);}
+  .player{height:71px;}
+}
+@media(min-width:651px){
+  .cartoon-svg{top:0;height:77%;}
+  .scene:has(.cartoon-stage) .ceremony-content{background:linear-gradient(to top,#fff9f3fd 0%,#fff7e9ef 19%,#fffaefbb 34%,transparent 62%);}
+}
+@media(prefers-reduced-motion:reduce){
+  .daylight-shimmer{animation:none;opacity:.1;}
+  .cartoon-svg *,.cartoon-svg{animation:none!important;}
+  .scene.is-active .cartoon-stage{opacity:1;filter:none;transform:none;}
+}
+
+.cartoon-svg{translate:var(--look-x,0px) var(--look-y,0px);}
+
+/* Keep the actors, not random props, as the visual focus. */
+.cartoon-svg .cartoon-heart {display:none;}
+.cartoon-svg .mehndi-flower-dance {opacity:.32;}
+.cartoon-svg .cartoon-petal {filter:blur(.35px);}
+@keyframes petal-fall {0%{opacity:0;transform:translate(-12px,-130px) rotate(-22deg)}12%{opacity:.42}82%{opacity:.32}100%{opacity:0;transform:translate(56px,245px) rotate(198deg)}}
+/* Fast, sharp titles; no multi-second blurry text during scene changes. */
+.reveal{filter:blur(2px);transition:opacity .85s cubic-bezier(.15,.74,.25,1),transform 1s cubic-bezier(.15,.74,.25,1),filter .8s ease;transform:translate3d(0,22px,0) scale(.995);}
+.scene.is-active .delay-1{transition-delay:.25s}
+.scene.is-active .delay-2{transition-delay:.55s}
+.scene.is-active .delay-3{transition-delay:.85s}
+.scene.is-active .delay-4{transition-delay:1.1s}
