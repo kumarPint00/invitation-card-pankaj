@@ -65,3 +65,8 @@ The invitation now includes **seven self-contained, illustrated SVG character sc
 | Shubh Vivah | Cartoon bride and groom move around the sacred fire beneath a decorated mandap, with flames and flower petals. |
 
 All character and particle animation is suspended in inactive scenes and paused when the film playback is paused. The animations honor `prefers-reduced-motion`. Mobile and desktop screenshots were checked with headless Chromium (412×915 and 1280×850). The RSVP backend and private guest dashboard are unchanged; this visual enhancement does not activate or change Supabase credentials or Wedding Planner data synchronization.
+
+
+## Daylight scene treatment (v3)
+
+The film now defaults to an ivory/champagne/soft-blush daylight theme with nuanced 2.5D illustrated character animation, event-specific choreographed gestures, blinking, gentle breathing, ceremonial props, foreground flower drift, and pointer-responsive camera parallax. These are illustrated animations, **not photorealistic recorded footage**. `/light-realism.css` contains theme and choreography overrides; `/motion.js` adds a 4px limited, accessibility-aware pointer camera effect. `index.html` contains the staged SVG artwork. No remote animation library or paid tier is needed. The existing RSVP backend, Supabase migration and guest dashboard are unchanged; server-side environment variables are still required before live persistence works.
