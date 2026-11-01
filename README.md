@@ -16,8 +16,6 @@ No Bahubhoj or Reception. No ceremony hours were invented; unconfirmed times are
 
 ## Frontend
 
-A designed social-sharing image is included in the downloadable package as `og-cover.jpg`; linking it in the deployed Open Graph metadata is pending upload.
-
 Plain HTML, CSS, JavaScript (no build or paid dependencies); uses animated 3D CSS temple doors, moving mandap fire, gold SVG strokes, mehndi vine drawing, procedural canvas petals, parallax/radial backgrounds, timed choreography, timeline seeking, keyboard navigation, responsive design and reduced-motion preference. Optional original synthesized ambient notes require a tap to start because browsers prohibit autoplaying sound.
 
 ## Deployment
@@ -30,7 +28,7 @@ Plain HTML, CSS, JavaScript (no build or paid dependencies); uses animated 3D CS
    - `ADMIN_DASHBOARD_TOKEN` — new, random secret >= 28 characters for `/dashboard.html`.
    - `RSVP_HASH_SECRET` — separate long random HMAC secret (recommended).
 4. Redeploy to make env settings active. Test one RSVP; check the dashboard.
-5. Open `/dashboard.html`, authenticate with the admin token, and import a Wedding Planner JSON backup with `data.guests`, or CSV with columns `id,name,phone,party_size`. It preserves planner IDs and re-imports preserve personal tokens. The dashboard also supports manually adding a guest and, when no guest records exist, explicitly opting into previewing planner contacts as possible invitees. It never sends all contacts without your review.
+5. Open `/dashboard.html`, authenticate with the admin token, and import a Wedding Planner JSON backup with `data.guests`, or CSV with columns `id,name,phone,party_size`. It preserves planner IDs and re-imports preserve personal tokens.
 6. Share personal URLs copied from the dashboard; generic URL supports a phone-number-identified RSVP.
 
 ### Relationship to Wedding Planner
@@ -51,3 +49,19 @@ The `kumarPint00/wedding-planner` repository is an **Android WebView wrapper**, 
 ## Local preview & tests
 
 Run `python3 -m http.server 8080` from this directory and open `http://localhost:8080`. This previews animation; the RSVP API requires Vercel or a compatible server. `npm test` checks core endpoint validation. For full backend verification, configure Supabase and deploy in Vercel, then test an RSVP end-to-end.
+
+## Cartoon animation edition (v2)
+
+The invitation now includes **seven self-contained, illustrated SVG character scenes** rather than generic animated cards. Characters and decorations are drawn directly as vector shapes; no third-party video, external stock art, paid service, animation player, or remote dependency is required. The illustrations intentionally use a colorful storybook/cartoon treatment, not likenesses of real family members.
+
+| Scene | Illustrated action |
+|---|---|
+| Shri Ganesh opening | A respectful cartoon Shri Ganesh raises a blessing hand, swings his trunk, and floats in a glowing temple setting while petals move across the screen. |
+| Couple introduction | Cartoon Pankaj and Neetu sway, wave and appear under a decorated arch with an animated heart. |
+| Tilak | A family elder reaches toward the groom's forehead, the groom bows and the tilak appears. |
+| Haldi | A family member applies haldi to the groom; turmeric splashes appear and the groom laughs. |
+| Mehndi | An artist moves her hand across a henna pattern that draws itself, with festive details in the background. |
+| Matkor | Women dance around a decorated kalash and soil motif, with pouring-water animation. |
+| Shubh Vivah | Cartoon bride and groom move around the sacred fire beneath a decorated mandap, with flames and flower petals. |
+
+All character and particle animation is suspended in inactive scenes and paused when the film playback is paused. The animations honor `prefers-reduced-motion`. Mobile and desktop screenshots were checked with headless Chromium (412×915 and 1280×850). The RSVP backend and private guest dashboard are unchanged; this visual enhancement does not activate or change Supabase credentials or Wedding Planner data synchronization.
