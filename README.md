@@ -16,6 +16,8 @@ No Bahubhoj or Reception. No ceremony hours were invented; unconfirmed times are
 
 ## Frontend
 
+A designed social-sharing image is included in the downloadable package as `og-cover.jpg`; linking it in the deployed Open Graph metadata is pending upload.
+
 Plain HTML, CSS, JavaScript (no build or paid dependencies); uses animated 3D CSS temple doors, moving mandap fire, gold SVG strokes, mehndi vine drawing, procedural canvas petals, parallax/radial backgrounds, timed choreography, timeline seeking, keyboard navigation, responsive design and reduced-motion preference. Optional original synthesized ambient notes require a tap to start because browsers prohibit autoplaying sound.
 
 ## Deployment
@@ -28,7 +30,7 @@ Plain HTML, CSS, JavaScript (no build or paid dependencies); uses animated 3D CS
    - `ADMIN_DASHBOARD_TOKEN` — new, random secret >= 28 characters for `/dashboard.html`.
    - `RSVP_HASH_SECRET` — separate long random HMAC secret (recommended).
 4. Redeploy to make env settings active. Test one RSVP; check the dashboard.
-5. Open `/dashboard.html`, authenticate with the admin token, and import a Wedding Planner JSON backup with `data.guests`, or CSV with columns `id,name,phone,party_size`. It preserves planner IDs and re-imports preserve personal tokens.
+5. Open `/dashboard.html`, authenticate with the admin token, and import a Wedding Planner JSON backup with `data.guests`, or CSV with columns `id,name,phone,party_size`. It preserves planner IDs and re-imports preserve personal tokens. The dashboard also supports manually adding a guest and, when no guest records exist, explicitly opting into previewing planner contacts as possible invitees. It never sends all contacts without your review.
 6. Share personal URLs copied from the dashboard; generic URL supports a phone-number-identified RSVP.
 
 ### Relationship to Wedding Planner
